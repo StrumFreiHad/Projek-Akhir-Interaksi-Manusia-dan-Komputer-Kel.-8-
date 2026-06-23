@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Kampus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">KAMPUSKU</div>
+
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#profil">Profil</a></li>
+        <li><a href="#prodi">Program Studi</a></li>
+        <li><a href="#fasilitas">Fasilitas</a></li>
+        <li><a href="#video">Video Promosi</a></li>
+        <li><a href="#admin">Anggota Kelompok</a></li>
+        <li><a href="#pendaftaran">Pendaftaran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- BERANDA -->
+  <section id="beranda" class="hero">
+    <h1>Selamat Datang di Universitas Pamulang Kampus Serang</h1>
+    <p>Kerja Jalan, Kuliah Jalan, Masa Depan Aman</p>
+    <a href="#profil" class="btn">Baca Selengkapnya</a>
+  </section>
+
+   <!-- PROFIL -->
+<section id="profil" class="section">
+
+  <h2>Profil Kampus</h2>
+
+  <div class="profil-container">
+
+    <!-- FOTO -->
+    <div class="profil-image">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.ezYL3iuncm0FY2GjYj9S7QHaEK?r=0&cb=thfc1falcon&rs=1&pid=ImgDetMain&o=7&rm=3"
+      alt="Foto Kampus">
+    </div>
+
+    <!-- VISI MISI -->
+    <div class="profil-text">
+
+      <h3>Visi</h3>
+      <p>
+        Terwujudnya PSDKU yang unggul dalam pengembangan Ilmu Pengetahuan, Teknologi, Sosial dan Budaya (IPTEKSOSBUD) dan memberikan akses pendidikan tinggi bagi masyarakat yang dijiwai religiositas dan humanisme.
+      </p>
+
+      <h3>Misi</h3>
+      <ul>
+        <li>Menyelenggarakan pendidikan tinggi yang berkualitas dan terjangkau oleh lapisan masyarakat dijiwai religiositas dan humanisme;</li>
+        <li>Menyelenggarakan pendidikan tinggi yang mengembangkan ilmu pengetahuan, teknologi, sosial dan budaya;</li>
+        <li>Menyelenggarakan penelitian dan Pengabdian kepada Masyarakat yang inovatif, relevan dan berdampak positif bagi masyarakat maupun industri;</li>
+        <li>Membangun dan memelihara kemitraan dengan para pemangku kepentingan untuk mengimplementasikan Tri Dharma Perguruan Tinggi</li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- PROGRAM STUDI -->
+  <section id="prodi" class="section">
+    <h2>Program Studi</h2>
+
+    <div class="card-container">
+
+      <div class="card">Akuntansi</div>
+      <div class="card">Manajemen</div>
+      <div class="card">Ilmu Hukum</div>
+      <div class="card">Sistem Komputer</div>
+      <div class="card">Sistem Informasi</div>
+      <div class="card">Teknik Mesin</div>
+      <div class="card">Teknik Elektro</div>
+      <div class="card">Matematika</div>
+      <div class="card">Kimia</div>
+      <div class="card">Ilmu Pemerintahan</div>
+      <div class="card">Administrasi Negara</div>
+      <div class="card">Biologi</div>
+
+    </div>
+  </section>
+
+  <!-- FASILITAS -->
+    <section id="fasilitas" class="section">
+    <h2>Fasilitas Kampus</h2>
+
+    <div class="card-container">
+
+      <div class="card" onclick="showImage('img/foto gedung.jpeg')">
+        Gedung Unpam
+      </div>
+
+      <div class="card" onclick="showImage('img/perpustakaan.jpeg')">
+        Perpustakaan
+      </div>
+
+      <div class="card" onclick="showImage('img/foto minisoccer.jpeg')">
+        Lapangan MiniSoccer
+      </div>
+
+      <div class="card" onclick="showImage('img/foto basket.jpeg')">
+        Lapangan Basket
+      </div>
+
+      <div class="card" onclick="showImage('img/foto lab. kom.jpeg')">
+        Lab. Komputer
+      </div>
+
+      <div class="card" onclick="showImage('img/foto lab.kim.jpeg')">
+        Lab. Kimia
+      </div>
+
+      <div class="card" onclick="showImage('img/foto ruang pengadilan.jpeg')">
+        Ruang Peradilan Semu
+      </div>
+
+      <div class="card" onclick="showImage('img/foto kantin.jpeg')">
+        Kantin
+      </div>
+
+      <div class="card" onclick="showImage('img/foto parkiran.jpeg')">
+        Area Parkir Luas
+      </div>
+
+    </div>
+</section>
+
+<!-- Popup -->
+<div id="popup" class="popup">
+    <span class="close" onclick="closeImage()">&times;</span>
+    <img id="popup-img" src="">
+</div>
+  </section>
+
+  <!-- VIDEO PROMOSI -->
+  <section id="video" class="section">
+    <h2>Video Promosi</h2>
+
+    <div class="video-container">
+      <iframe
+        width="560"
+        height="315"
+        src="https://youtube.com/embed/9u46ZaHhmPg"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ANGGOTA KELOMPOK -->
+<section id="admin" class="section">
+
+  <h2>Anggota Kelompok</h2>
+
+  <div class="kelompok-container">
+
+    <!-- COVER KELOMPOK -->
+    <div class="kelompok-card" onclick="toggleAnggota()">
+
+      <img src="img/foto kelompok.jpeg"
+      alt="Kelompok">
+
+      <h3>Kelompok Sistem Komputer</h3>
+
+      <p>Klik untuk melihat anggota</p>
+    </div>
+
+    <!-- ISI ANGGOTA -->
+    <div class="anggota-box" id="anggotaBox">
+
+      <div class="anggota">
+        <img src="img/foto hadi.jpeg">
+        <h4>Hadi Hidayatulloh</h4>
+      </div>
+
+      <div class="anggota">
+        <img src="img/foto tasya.jpeg">
+        <h4>Tasya Ayu Pasaribu</h4>
+      </div>
+
+      <div class="anggota">
+        <img src="img/foto salamania.jpeg">
+        <h4>Salamania</h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PENDAFTARAN -->
+
+<section id="pendaftaran" class="section pendaftaran">
+
+  <h2>Pendaftaran Mahasiswa Baru</h2>
+
+  <p>
+    Bergabunglah bersama Universitas Pamulang Kampus Serang dan raih masa depan yang lebih baik.
+  </p>
+
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSf6zK9wfnBmi7PTYIsp5otH1LlHCjRwC_z-ytrDoMSNvruF_w/viewform?usp=publish-editor" target="_blank" class="btn-daftar">
+    Daftar Sekarang
+  </a>
+
+</section>
+
+
+  <div id="popup" class="popup">
+      <span class="close" onclick="closeImage()">&times;</span>
+      <img id="popup-img" src="">
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
